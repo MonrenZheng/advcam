@@ -59,21 +59,24 @@
 
 为了使得对抗性样本与风格图像相似，通过对网络中的对应层特征对比的方法设计损失函数。G 是从特征提取器 F 中在第 l 层提取的特征的 Gram 矩阵。实验中使用了5层不同的特征，分别是conv1_1,conv2_1,conv3_1,conv4_1,conv5_1,详见实验代码。
 
-![image](https://github.com/user-attachments/assets/95ca73ea-709c-485e-a3a8-a9bded144c8e)
+![image](https://github.com/user-attachments/assets/7e3ef4b0-a33d-418d-928f-40899030d79c)
+
 
 
 ### 内容一致:
 
 为了保持对抗性干扰隐蔽性，对抗性样本不能过度偏离原始图像，这里仍然使用某一网络层得到的特征进行一致性度量，实验中使用了conv4_2得到的特征。
 
-![image](https://github.com/user-attachments/assets/7f3d0515-ad90-44b0-ade6-fb99a134193d)
+![image](https://github.com/user-attachments/assets/fc51fb19-4a53-4b4d-92ad-b6f7da3c2d8c)
+
 
 
 ### 损失函数:
 
 最终的损失函数中α,γ等为不同损失值的权重参数。
 
-![image](https://github.com/user-attachments/assets/dc8f4099-2e67-4516-9727-85be714958f9)
+![image](https://github.com/user-attachments/assets/37fc1e94-18e2-4e7d-bed9-10682b7063e1)
+
 
 
 ## 部分结果及说明
