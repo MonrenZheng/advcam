@@ -90,9 +90,10 @@
 
 本次实验，在200之内的时间迭代步骤就可以得到较好的对抗性结果。对于各项超参数，在[原作代码](https://github.com/RjDuan/AdvCam-Hide-Adv-with-Natural-Styles)参数默认值的基础上有略微修改。(最后一张图的结果，表示由原始的标签得到最后的攻击标签，以及攻击标签的概率值)
 
+> 这一张原始值为clock可能是ImageNet中没有相应的类别图像
 ![image](https://github.com/user-attachments/assets/2418dedc-b3c0-4f11-a003-4b2248477736)
 
-> 这一张原始值为clock可能是ImageNet中没有相应的类别图像
+
 
 
 
