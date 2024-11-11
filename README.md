@@ -89,21 +89,21 @@ $$
 
 本次实验，在200之内的时间迭代步骤就可以得到较好的对抗性结果。对于各项超参数，在[原作代码]([RjDuan/AdvCam-Hide-Adv-with-Natural-Styles: Code for "Adversarial Camouflage: Hiding Physical World Attacks with Natural Styles" (CVPR 2020)](https://github.com/RjDuan/AdvCam-Hide-Adv-with-Natural-Styles))参数默认值的基础上有略微修改。(最后一张图的结果，表示由原始的标签得到最后的攻击标签，以及攻击标签的概率值)
 
-![1731317366205](C:\Users\86159\AppData\Roaming\Typora\typora-user-images\1731317366205.png)
+![image](https://github.com/user-attachments/assets/2418dedc-b3c0-4f11-a003-4b2248477736)
 
 > 这一张原始值为clock可能是ImageNet中没有相应的类别图像
 
 
-
-![1731319936530](C:\Users\86159\AppData\Roaming\Typora\typora-user-images\1731319936530.png)
-
-
-
-![1731321305027](C:\Users\86159\AppData\Roaming\Typora\typora-user-images\1731321305027.png)
+![image](https://github.com/user-attachments/assets/2242c176-a914-4f2c-bd0e-106c4b90f1fe)
 
 
 
-![1731327111001](C:\Users\86159\AppData\Roaming\Typora\typora-user-images\1731327111001.png)
+![image](https://github.com/user-attachments/assets/396b3ac5-db2a-44c5-8568-301a400a71e3)
+
+
+
+![image](https://github.com/user-attachments/assets/b85cbe7e-6845-4e5e-bd9f-189e377beedf)
+
 
 
 
