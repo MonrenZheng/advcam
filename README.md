@@ -36,7 +36,7 @@
 |-- attack.py
 |-- loss.py
 |-- utils.py
-|-- Result.py
+|-- Result
 ```
 
 ### Run Attack
