@@ -2,7 +2,7 @@
 
 ## 介绍
 
-此次实验是对[Adversarial Camouflage: Hiding Physical-World Attacks with Natural Styles](https://arxiv.org/abs/2003.08757)思想的实现，并且只针对**数字攻击**。实验参考了[原作代码](https://github.com/RjDuan/AdvCam-Hide-Adv-with-Natural-Styles)。我们使用的模型与论文中一致，为`torchvision.models`中预训练的`vgg19`，这是在`ImageNet`上预训练好的模型。
+此次实验是对[Adversarial Camouflage: Hiding Physical-World Attacks with Natural Styles](https://arxiv.org/abs/2003.08757)思想的实现，并且只针对**数字攻击**。实验参考了[原作代码](https://github.com/RjDuan/AdvCam-Hide-Adv-with-Natural-Styles)。我们使用的模型与论文中一致，均为`vgg19`，在`ImageNet`上预训练好的模型。本实验使用pytorch实现。
 
 ## 实验初步
 
@@ -37,7 +37,10 @@
 |-- loss.py
 |-- utils.py
 |-- Result
+|-- synset.txt
 ```
+其中`main`为整个程序的入口，其中可以进行各种超参数、参数的修改，图像路径的选择；`attack.py`中实现攻击函数，主要进行基于风格迁移的对抗性样本生成；攻击过程中使用的模型在`Vgg`中py文件定义；`loss.py`中实现了各种攻击优化过程中需要的损失函数；`utils.py`中包含了攻击过程中需用到的各种功能函数，如进行图像加载、图像保存、风格掩码生成、最大概率类别获取、gram矩阵生成等；`synset.txt`中有供生成真实label的1000个ImageNet类别。
+`data`中有对抗使用的原始图像、风格图像、原始分割图像、风格分割图像，分割图像主要用于掩码生成，以针对特定的攻击区域；最终生成的对抗性样本将保存到`result`中。
 
 ### Run Attack
 
@@ -51,7 +54,8 @@
 
 实现了两种形式的对抗，一种有明确目标标签，另一无目标标签。
 
-![image](https://github.com/user-attachments/assets/ee66d33d-fa0d-4f0d-b569-c316ecf52187)
+![image](https://github.com/user-attachments/assets/d0df844a-0eb5-4d97-aac0-6013bc70392b)
+
 
 
 
