@@ -1,6 +1,7 @@
 import argparse
 import os
 from attack import run_attack
+import math
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--content_image_path", type=str, default='./data/content/stop-sign/stop-sign.jpg')
@@ -23,6 +24,7 @@ parser.add_argument("--save_iter", type=int, default=30)
 parser.add_argument("--true_label",       dest='true_label',        nargs='?', type = int,
                     help="The target label for target attack", default=8)
 args = parser.parse_args()
+
 
 if __name__ == "__main__":
 
